@@ -9,21 +9,21 @@
   </head>
   <body>
     <main>
+
       <h1 id="profil">Profil</h1>
-      <p><b>Hier konnen Sie Ihre Adresse-Angaben einsehen und anpassen.</b></p>
-      <hr />
+      <h2>Hier konnen Sie Ihre Adresse-Angaben einsehen und anpassen.</h2>
       <form action="#" method="post">
         <fieldset name="PersonlichenDaten">
           <legend>Personliche Daten</legend>
+
           <label for="titel">Titel</label>
           <input
             id="titel"
             type="text"
-            name="Titel"
+            name="titel"
             placeholder="Dr. hc"
             required
           />
-          <br />
 
           <label for="vorname">Vorname</label>
           <input
@@ -33,7 +33,6 @@
             placeholder="Peter"
             required
           />
-          <br />
 
           <label for="nachname">Nachname</label>
           <input
@@ -43,13 +42,12 @@
             placeholder="Muster"
             required
           />
-          <br />
 
           <label>Geschlecht</label>
           <label for="woman">W</label>
           <input type="radio" id="woman" name="gender" value="W" required />
           <label for="man">M</label>
-          <input type="radio" id="man" name="gender" value="M" /> <br />
+          <input type="radio" id="man" name="gender" value="M" />
 
           <label>Sprache</label>
           <label for="german">DE</label>
@@ -64,18 +62,16 @@
           <input type="radio" id="french" name="language" value="french" />
           <label for="italian">IT</label>
           <input type="radio" id="italian" name="language" value="italian" />
-          <br />
         </fieldset>
-        <hr />
 
         <fieldset name="Kontaktdaten">
           <legend>Kontaktdaten</legend>
+
           <label for="telephone">Telefon</label>
           <input type="tel" id="telephone" name="tel" required />
-          <img src="./img/black-close-icon-3.png" alt="required" /> <br />
+
           <label for="mobile">Mobile</label>
           <input type="tel" id="mobile" name="mobile" placeholder="optional" />
-          <br />
           <label for="hauptnummer">Hauptnummer</label>
           <input
             type="tel"
@@ -83,31 +79,27 @@
             name="hauptnummer"
             placeholder="optional"
           />
-          <br />
+
           <label for="fax">Fax</label>
-          <input type="tel" id="fax" name="fax" placeholder="optional" /> <br />
-          <label for="mail1">Mail 1</label>
-          <input type="email" name="email1" id="email1" required /><img
-            src="./img/black-close-icon-3.png"
-            alt="required"
-          />
-          <br />
-          <label for="mail2">Mail 2</label>
+          <input type="tel" id="fax" name="fax" placeholder="optional" />
+
+          <label for="email1">Mail 1</label>
+          <input type="email" name="email1" id="email1" required />
+          <label for="email2">Mail 2</label>
           <input
             type="email"
             name="email2"
             id="email2"
             placeholder="optional"
           />
-          <br />
         </fieldset>
-        <hr />
 
         <fieldset name="AdressDaten">
           <legend>Adress Daten</legend>
+
           <label for="firma">Firma</label>
           <input type="text" id="firma" name="firma" />
-          <img src="./img/black-close-icon-3.png" alt="required" /> <br />
+
           <label for="zusatzfirma">Zusatz Firma</label>
           <input
             type="text"
@@ -115,7 +107,7 @@
             name="zusatzfirma"
             placeholder="optional"
           />
-          <br />
+
           <label for="homepage">Homepage</label>
           <input
             type="url"
@@ -123,8 +115,9 @@
             id="homepage"
             placeholder="optional"
           />
-          <br />
-          <label for="adress">Adresse / Haus Nr</label>
+
+          <label for="adress">Adresse / </label>
+          <label for="hausnumber">Haus Nr</label>
           <input
             type="text"
             id="adress"
@@ -135,26 +128,28 @@
           <input
             type="number"
             name="hausnumber"
-            id="hausnummer"
+            id="hausnumber"
             placeholder="33"
             required
           />
-          <br />
+
           <label for="zusatzadress">Zusatz Adresse</label>
           <input
             type="text"
             id="zusatzadress"
             name="zusatzadress"
             placeholder="optional"
-          /><br />
+          />
+
           <label for="postfach">Postfach</label>
           <input
             type="number"
             id="postfach"
             name="postfach"
             placeholder="optional"
-          /><br />
-          <label for="plz">PLZ / Ort</label>
+          />
+          <label for="plz">PLZ / </label>
+          <label for="ort">Ort</label>
           <input
             type="number"
             name="plz"
@@ -169,17 +164,19 @@
             placeholder="Musterstadt"
             required
           />
-          <br />
-          <label for="kantonland">Kanton / Land</label>
+
+          <label for="kanton">Kanton / </label>
+          <label for="land">Land</label>
           <input
             type="text"
-            name="kantonland"
+            name="kanton"
             id="kantonland"
             placeholder="ZH"
           />
           <input type="text" name="land" id="land" placeholder="Schweiz" />
         </fieldset>
-        <input id="submitbutton" type="button" value="Speichern" />
+
+        <input id="submitbutton" type="submit" value="Speichern" />
       </form>
     </main>
   </body>
